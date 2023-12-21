@@ -1,0 +1,24 @@
+services:
+  url-shortener:
+    stdin_open: true
+    tty: true
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+  db:
+    image: "postgres:15"
+    volumes:
+      - app-db-data:/var/lib/postgresql/data/pgdata
+    ports:
+      - "5432:5432"
+    env_file:
+      - .env
+    environment:
+      - PGDATA=/var/lib/postgresql/data/pgdata
+volumes:
+  app-db-data:
+
+networks:
+  network:
