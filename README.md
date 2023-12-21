@@ -1,7 +1,6 @@
 # URL Shortener App
 
-[![Build Status](https://img.shields.io/travis/{your-username}/{your-repo}?style=flat-square)](https://travis-ci.org/{your-username}/{your-repo})
-[![License](https://img.shields.io/github/license/{your-username}/{your-repo}?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/github/license/muhammadusama377/url-shortener?style=flat-square)](LICENSE)
 
 ## Description
 
