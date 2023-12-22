@@ -34,10 +34,15 @@ The URL Shortener App is a Python-based web application built with FastAPI. It a
     cd url-shortener
     ```
 
-3. Build:
+3. Install dependencies:
 
     ```bash
     pip install -r requirements.txt
+    ```
+4. Run Migrations:
+
+    ```bash
+   alembic upgrade head
     ```
 
 ## Usage
