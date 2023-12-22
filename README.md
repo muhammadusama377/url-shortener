@@ -1,7 +1,5 @@
 # URL Shortener App
 
-[![License](https://img.shields.io/github/license/muhammadusama377/url-shortener?style=flat-square)](LICENSE)
-
 ## Description
 
 The URL Shortener App is a Python-based web application built with FastAPI. It allows users to shorten long URLs into easily shareable and memorable short links. The app supports OpenAPI documentation, and it can be easily deployed using Docker.
@@ -27,16 +25,16 @@ The URL Shortener App is a Python-based web application built with FastAPI. It a
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/{your-username}/{your-repo}.git
+    git clone https://github.com/muhammadusama377/url-shortener.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd {your-repo}
+    cd url-shortener
     ```
 
-3. Install dependencies:
+3. Build:
 
     ```bash
     pip install -r requirements.txt
@@ -63,13 +61,13 @@ The OpenAPI documentation provides details about the available endpoints, reques
 1. Build the Docker image:
 
     ```bash
-    docker build -t url-shortener-app .
+    docker-compose build
     ```
 
 2. Run the Docker container:
 
     ```bash
-    docker run -d -p 8000:8000 --name url-shortener-container url-shortener-app
+    docker-compose up
     ```
 
 3. Access the application at [http://localhost:8000](http://localhost:8000) in your browser.
@@ -79,5 +77,3 @@ The OpenAPI documentation provides details about the available endpoints, reques
 Contributions are welcome! Please follow our [contribution guidelines](CONTRIBUTING.md) to contribute to the project.
 
 ## License
-
-This project is licensed under the [MIT License](LICENSE).
